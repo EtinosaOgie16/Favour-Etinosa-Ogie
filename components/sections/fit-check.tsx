@@ -2,10 +2,6 @@ import { Eyebrow } from "@/components/ui/eyebrow";
 import { PillButton } from "@/components/ui/pill-button";
 import { goodFit, notFit } from "@/lib/data/fit-check";
 
-function pad(n: number) {
-  return String(n + 1).padStart(2, "0");
-}
-
 export function FitCheck() {
   return (
     <section className="bg-paper py-24">
@@ -22,35 +18,29 @@ export function FitCheck() {
         </div>
 
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
-          <div className="rounded-3xl bg-blush p-8 sm:p-10">
+          <div className="rounded-[2.5rem] bg-blush p-10 pb-14 sm:rounded-[5rem] sm:p-14 sm:pb-20">
             <h3 className="font-serif text-xl font-bold">Good fit — if you...</h3>
             <ul className="mt-6 space-y-5">
-              {goodFit.map((item, i) => (
+              {goodFit.map((item) => (
                 <li key={item} className="flex items-start gap-4">
                   <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold text-white">
                     +
                   </span>
-                  <span className="text-sm leading-relaxed text-ink/80">
-                    <span className="mr-2 font-mono text-xs text-accent">{pad(i)}</span>
-                    {item}
-                  </span>
+                  <span className="text-sm leading-relaxed text-ink/80">{item}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="rounded-3xl bg-stone p-8 sm:p-10">
+          <div className="rounded-[2.5rem] bg-stone p-10 pb-14 sm:rounded-[5rem] sm:p-14 sm:pb-20">
             <h3 className="font-serif text-xl font-bold">Not a fit — if you...</h3>
             <ul className="mt-6 space-y-5">
-              {notFit.map((item, i) => (
+              {notFit.map((item) => (
                 <li key={item} className="flex items-start gap-4">
                   <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-ink/80 text-sm font-bold text-white">
                     –
                   </span>
-                  <span className="text-sm leading-relaxed text-ink/70">
-                    <span className="mr-2 font-mono text-xs text-ink/40">{pad(i)}</span>
-                    {item}
-                  </span>
+                  <span className="text-sm leading-relaxed text-ink/70">{item}</span>
                 </li>
               ))}
             </ul>

@@ -83,17 +83,56 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/40 sm:flex-row">
-          <p>© {siteConfig.shortName} 2026. Independent writer, no agency in between.</p>
-          <a
-            href="#top"
-            className="inline-flex items-center gap-2 text-white/70 transition-colors hover:text-accent"
-          >
-            Back to top
-            <span aria-hidden className="text-accent">
-              ↑
-            </span>
-          </a>
+        <div className="mt-16 flex flex-col items-center gap-6 border-t border-white/10 pt-10">
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/15 px-3 py-1.5 text-xs font-medium text-white/80">
+            <span className="h-2 w-2 rounded-full bg-accent" />
+            Available for new projects
+          </span>
+
+          <div className="flex items-center gap-3">
+            <a
+              href={siteConfig.social.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 font-serif text-sm font-bold text-white transition-colors hover:bg-accent"
+            >
+              in
+            </a>
+            <a
+              href={siteConfig.social.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-accent"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+                <path d="M4 5h16a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H9l-4 4v-4H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z" />
+              </svg>
+            </a>
+            <a
+              href={`mailto:${siteConfig.email}`}
+              aria-label="Email"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-accent"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="h-4 w-4"
+              >
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="m4 7 8 6 8-6" />
+              </svg>
+            </a>
+          </div>
+
+          <p className="text-xs text-white/40">
+            © {siteConfig.shortName} 2026. Independent writer, no agency in between.
+          </p>
         </div>
       </div>
     </footer>

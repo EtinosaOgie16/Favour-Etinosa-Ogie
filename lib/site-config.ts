@@ -10,6 +10,7 @@ export const siteConfig = {
   social: {
     linkedin: "https://www.linkedin.com/",
     twitter: "https://x.com/",
+    whatsapp: "https://wa.me/",
   },
   nav: [
     { label: "Home", href: "/" },
