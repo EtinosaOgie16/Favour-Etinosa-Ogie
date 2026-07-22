@@ -27,11 +27,4 @@ export const testimonials: Testimonial[] = [
     quote:
       "Favour is an exceptional writer. She delivered high-quality articles that were well-researched, structured perfectly, and strictly followed the brief. What I appreciated most was her ability to get straight to the point without 'fluff' while maintaining an engaging tone. She met all deadlines and required almost no edits. I highly recommend her to anyone looking for a reliable, professional SEO writer. Will definitely hire again!",
   },
-  {
-    name: "Abdul Wadood",
-    title: "Marketing Manager [job title placeholder]",
-    photo: "/testimonials/abdul-wadood.svg",
-    quote:
-      "Favour is doing an exceptional job with content writing. Her work is engaging, easy to read, and well-structured.",
-  },
 ];

@@ -3,10 +3,10 @@
 
 :root {
   --color-paper: #ffffff;
-  --color-blush: #fbe7ec;
+  --color-blush: #fdedf2;
   --color-blush-deep: #f6d3dd;
-  --color-accent: #e63e72;
-  --color-accent-dark: #c62d5c;
+  --color-accent: #ee6fa0;
+  --color-accent-dark: #d6528a;
   --color-ink: #1a1715;
   --color-onyx: #0b0a0a;
   --color-cream: #faf6f0;
@@ -48,6 +48,12 @@ body {
   letter-spacing: 0.18em;
   font-size: 0.75rem;
   font-weight: 600;
+}
+
+h1 em,
+h2 em {
+  color: var(--color-accent);
+  font-style: italic;
 }
 
 @keyframes marquee-scroll {

@@ -13,7 +13,7 @@ export function Testimonials() {
           </h2>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2">
+        <div className="mt-14 grid gap-6 sm:grid-cols-3">
           {testimonials.map((t) => (
             <figure
               key={t.name}
@@ -22,7 +22,7 @@ export function Testimonials() {
               <blockquote className="text-sm leading-relaxed text-ink/80">
                 &ldquo;{t.quote}&rdquo;
               </blockquote>
-              <figcaption className="mt-6 flex items-center gap-3">
+              <figcaption className="mt-auto flex items-center gap-3 pt-6">
                 <div className="relative h-11 w-11 shrink-0 overflow-hidden rounded-full">
                   <Image src={t.photo} alt={t.name} fill className="object-cover" />
                 </div>
