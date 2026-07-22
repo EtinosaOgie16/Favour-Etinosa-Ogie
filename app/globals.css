@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --color-paper: #ffffff;
+  --color-blush: #fbe7ec;
+  --color-blush-deep: #f6d3dd;
+  --color-accent: #e63e72;
+  --color-accent-dark: #c62d5c;
+  --color-ink: #1a1715;
+  --color-onyx: #0b0a0a;
+  --color-cream: #faf6f0;
+  --color-yellow: #f4c430;
+  --color-stone: #f1efec;
+}
+
+@theme inline {
+  --color-paper: var(--color-paper);
+  --color-blush: var(--color-blush);
+  --color-blush-deep: var(--color-blush-deep);
+  --color-accent: var(--color-accent);
+  --color-accent-dark: var(--color-accent-dark);
+  --color-ink: var(--color-ink);
+  --color-onyx: var(--color-onyx);
+  --color-cream: var(--color-cream);
+  --color-yellow: var(--color-yellow);
+  --color-stone: var(--color-stone);
+
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-space-mono), ui-monospace, monospace;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-accent);
+  color: white;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee-scroll 28s linear infinite;
+}
