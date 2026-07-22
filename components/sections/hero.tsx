@@ -6,7 +6,11 @@ export function Hero() {
     <section id="top" className="bg-paper pt-16 pb-20 sm:pt-24 sm:pb-28">
       <div className="mx-auto grid max-w-6xl items-center gap-14 px-6 sm:px-8 lg:grid-cols-2 lg:gap-10">
         <div>
-          <p className="eyebrow text-accent">
+          <span className="mb-8 inline-flex items-center gap-2 rounded-full border border-black/10 px-4 py-1.5 text-xs font-medium text-ink/70">
+            <span className="h-2 w-2 rounded-full bg-accent" />
+            Available for new projects
+          </span>
+          <p className="eyebrow text-accent" style={{ fontSize: "0.875rem" }}>
             <sup className="mr-1 text-[0.7em]">✦</sup>Hi, I&rsquo;m Favour
           </p>
           <h1 className="mt-6 font-serif text-4xl leading-[1.1] font-bold tracking-tight sm:text-5xl lg:text-[3.4rem]">
