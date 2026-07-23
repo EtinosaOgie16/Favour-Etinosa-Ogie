@@ -21,7 +21,7 @@ export function Faq() {
         </div>
 
         <div className="mt-14 grid gap-8 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.6fr)] lg:gap-12">
-          <div className="h-fit rounded-3xl bg-paper p-8 text-center lg:sticky lg:top-28">
+          <div className="h-fit rounded-[3rem] bg-paper p-10 text-center sm:rounded-full sm:p-14 lg:sticky lg:top-28">
             <div className="relative mx-auto h-24 w-24 overflow-hidden rounded-full">
               <Image
                 src="/placeholders/profile.svg"
