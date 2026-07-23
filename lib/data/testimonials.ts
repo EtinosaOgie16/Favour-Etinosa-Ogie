@@ -18,7 +18,7 @@ export const testimonials: Testimonial[] = [
     title: "Editor [job title placeholder]",
     photo: "/testimonials/sangeeta-regi-mathew.svg",
     quote:
-      "Favour is a dedicated writer. Her pieces were something I truly enjoyed reading. The topics were presented in an effortless manner and were engaging. During my time editing her work, she was always open to feedback and responsive to the suggestions given to her. It was rewarding to see her grow as a writer. The ease in communicating and her ability to incorporate everything she learned along the way made her stand out for me. Favour is sure to thrive in a place that requires creativity and well-written content.",
+      "Favour is a dedicated writer. Her pieces were engaging and effortless to read. She was always open to feedback and quick to incorporate suggestions, and it was rewarding to see her grow along the way. Her ease in communicating made her stand out — she's sure to thrive anywhere that values creativity and well-written content.",
   },
   {
     name: "Maria Deac",
