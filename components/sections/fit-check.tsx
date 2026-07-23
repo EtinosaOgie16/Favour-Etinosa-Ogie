@@ -18,7 +18,7 @@ export function FitCheck() {
         </div>
 
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
-          <div className="rounded-[2.5rem] bg-blush p-10 pb-14 sm:rounded-[5rem] sm:p-14 sm:pb-20">
+          <div className="rounded-[3rem] bg-blush p-10 pb-14 sm:rounded-full sm:p-16 sm:pb-24">
             <h3 className="font-serif text-xl font-bold">Good fit — if you...</h3>
             <ul className="mt-6 space-y-5">
               {goodFit.map((item) => (
@@ -32,7 +32,7 @@ export function FitCheck() {
             </ul>
           </div>
 
-          <div className="rounded-[2.5rem] bg-stone p-10 pb-14 sm:rounded-[5rem] sm:p-14 sm:pb-20">
+          <div className="rounded-[3rem] bg-stone p-10 pb-14 sm:rounded-full sm:p-16 sm:pb-24">
             <h3 className="font-serif text-xl font-bold">Not a fit — if you...</h3>
             <ul className="mt-6 space-y-5">
               {notFit.map((item) => (

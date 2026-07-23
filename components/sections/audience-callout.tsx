@@ -23,7 +23,7 @@ export function AudienceCallout() {
           {audienceCards.map((card) => (
             <div
               key={card.title}
-              className="rounded-[2.5rem] border-2 border-blush-deep bg-paper p-10 transition-all duration-300 hover:border-accent hover:shadow-[0_16px_40px_-12px_rgba(238,111,160,0.45)] sm:rounded-[3.5rem] sm:p-12"
+              className="rounded-[3rem] border-2 border-blush-deep bg-paper p-10 transition-all duration-300 hover:border-accent hover:shadow-[0_16px_40px_-12px_rgba(238,111,160,0.45)] sm:rounded-full sm:p-14"
             >
               <h3 className="font-serif text-xl font-bold">{card.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-ink/70">

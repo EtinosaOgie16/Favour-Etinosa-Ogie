@@ -8,7 +8,7 @@ export function Hero() {
         <div>
           <span className="mb-8 inline-flex items-center gap-2 rounded-full border border-black/10 px-4 py-1.5 text-xs font-medium text-ink/70">
             <span className="h-2 w-2 rounded-full bg-accent" />
-            Available for new projects
+            Available for work
           </span>
           <p className="eyebrow text-accent" style={{ fontSize: "0.875rem" }}>
             <sup className="mr-1 text-[0.7em]">✦</sup>Hi, I&rsquo;m Favour

@@ -42,7 +42,7 @@ export function Process() {
             ))}
           </div>
 
-          <div className="rounded-[2.5rem] bg-blush p-10 sm:rounded-[3.5rem] sm:p-14">
+          <div className="rounded-[3rem] bg-blush p-10 sm:rounded-full sm:p-16">
             <AnimatePresence mode="wait">
               <motion.div
                 key={step.number}

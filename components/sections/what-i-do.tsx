@@ -21,7 +21,7 @@ export function WhatIDo() {
           {services.map((service) => (
             <div
               key={service.number}
-              className="rounded-[2.5rem] bg-cream p-10 text-ink sm:rounded-[3.5rem] sm:p-12"
+              className="rounded-[3rem] bg-cream p-10 text-ink sm:rounded-full sm:p-14"
             >
               <span className="font-serif text-sm font-bold text-accent">
                 {service.number}
