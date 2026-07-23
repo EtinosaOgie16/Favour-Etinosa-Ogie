@@ -20,7 +20,7 @@ export function Pricing() {
           {pricingTiers.map((tier) => (
             <div
               key={tier.name}
-              className={`relative rounded-[3rem] p-10 pb-14 transition-all duration-300 hover:shadow-[0_16px_50px_-12px_rgba(238,111,160,0.55)] sm:rounded-full sm:p-14 sm:pb-24 ${
+              className={`relative rounded-[3rem] p-10 pb-14 transition-all duration-300 hover:shadow-[0_16px_50px_-12px_rgba(236,72,153,0.55)] sm:rounded-full sm:p-14 sm:pb-24 ${
                 tier.featured
                   ? "bg-white text-ink shadow-2xl lg:-translate-y-4"
                   : "bg-white/5 text-white ring-1 ring-white/10"

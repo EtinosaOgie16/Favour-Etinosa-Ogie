@@ -3,10 +3,11 @@
 
 :root {
   --color-paper: #ffffff;
-  --color-blush: #fdedf2;
+  --color-blush: #fce7ef;
   --color-blush-deep: #f6d3dd;
-  --color-accent: #ee6fa0;
-  --color-accent-dark: #d6528a;
+  --color-accent: #ec4899;
+  --color-accent-dark: #db2777;
+  --color-accent-text: #f472b6;
   --color-ink: #1a1715;
   --color-onyx: #0b0a0a;
   --color-cream: #faf6f0;
@@ -20,6 +21,7 @@
   --color-blush-deep: var(--color-blush-deep);
   --color-accent: var(--color-accent);
   --color-accent-dark: var(--color-accent-dark);
+  --color-accent-text: var(--color-accent-text);
   --color-ink: var(--color-ink);
   --color-onyx: var(--color-onyx);
   --color-cream: var(--color-cream);
@@ -28,7 +30,6 @@
 
   --font-serif: var(--font-playfair), Georgia, serif;
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-space-mono), ui-monospace, monospace;
 }
 
 body {
@@ -43,7 +44,7 @@ body {
 }
 
 .eyebrow {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: 0.75rem;
@@ -52,7 +53,7 @@ body {
 
 h1 em,
 h2 em {
-  color: var(--color-accent);
+  color: var(--color-accent-text);
   font-style: italic;
 }
 

@@ -18,7 +18,7 @@ export function SelectedWork() {
           {writingSamples.map((sample) => (
             <article
               key={sample.title}
-              className="rounded-[2.5rem] border border-black/5 bg-cream p-8 transition-all duration-300 hover:border-accent/40 hover:shadow-[0_16px_50px_-12px_rgba(238,111,160,0.5)]"
+              className="rounded-[2.5rem] border border-black/5 bg-cream p-8 transition-all duration-300 hover:border-accent/40 hover:shadow-[0_16px_50px_-12px_rgba(236,72,153,0.5)]"
             >
               <div className="flex items-start justify-between gap-3">
                 <span className="eyebrow text-ink/50">{sample.category}</span>

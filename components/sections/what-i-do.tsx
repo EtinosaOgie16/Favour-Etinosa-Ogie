@@ -21,7 +21,7 @@ export function WhatIDo() {
           {services.map((service) => (
             <div
               key={service.number}
-              className="rounded-[3rem] bg-cream p-10 text-ink transition-all duration-300 hover:shadow-[0_16px_50px_-12px_rgba(238,111,160,0.55)] sm:rounded-full sm:p-14"
+              className="rounded-[3rem] bg-cream p-10 text-ink transition-all duration-300 hover:shadow-[0_16px_50px_-12px_rgba(236,72,153,0.55)] sm:rounded-full sm:p-14"
             >
               <span className="font-serif text-sm font-bold text-accent">
                 {service.number}

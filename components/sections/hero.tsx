@@ -41,10 +41,6 @@ export function Hero() {
               priority
             />
           </div>
-          <div className="absolute -bottom-5 -left-5 hidden rounded-2xl bg-accent px-5 py-3 text-white shadow-lg sm:block">
-            <p className="font-serif text-xl italic leading-none">4+ yrs</p>
-            <p className="mt-1 text-xs text-white/80">B2B SaaS content</p>
-          </div>
         </div>
       </div>
     </section>

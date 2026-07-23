@@ -4,6 +4,7 @@ import { AudienceCallout } from "@/components/sections/audience-callout";
 import { WhatIDo } from "@/components/sections/what-i-do";
 import { SelectedWork } from "@/components/sections/selected-work";
 import { Process } from "@/components/sections/process";
+import { AboutMe } from "@/components/sections/about-me";
 import { Testimonials } from "@/components/sections/testimonials";
 import { FitCheck } from "@/components/sections/fit-check";
 import { Pricing } from "@/components/sections/pricing";
@@ -20,6 +21,7 @@ export default function Home() {
       <WhatIDo />
       <SelectedWork />
       <Process />
+      <AboutMe />
       <Testimonials />
       <FitCheck />
       <Pricing />
