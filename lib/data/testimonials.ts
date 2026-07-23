@@ -11,7 +11,7 @@ export const testimonials: Testimonial[] = [
     title: "Founder [job title placeholder]",
     photo: "/testimonials/svenja-rossig.svg",
     quote:
-      "Where should I start - Favour and I started working together almost 2 years ago, and she's been an absolute blessing for my business. Favour is one of the most talented copywriters I've ever met, and she not only created beautiful video script (which performed amazingly well), but also blog posts which drove traffic to our site. Her work ethic is outstanding, she always delivered her work on time and is a great communicator. It's been a huge pleasure working with her so far, and I can't wait to do many more projects with her - she's an essential part of our team. Apart from that, she's just a wonderfully positive person, and truly brings a light into your life. Thank you for everything, Favour!",
+      "Favour and I started working together almost two years ago, and she's been an absolute blessing for my business. She's one of the most talented copywriters I've ever met — creating video scripts that performed amazingly well, plus blog posts that drove real traffic to our site. Her work ethic is outstanding, she always delivers on time, and she's a wonderful communicator.",
   },
   {
     name: "Sangeeta Regi Mathew",

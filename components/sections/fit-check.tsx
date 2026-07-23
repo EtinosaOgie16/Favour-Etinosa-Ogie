@@ -18,8 +18,8 @@ export function FitCheck() {
         </div>
 
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
-          <div className="rounded-[3rem] bg-blush p-10 pb-14 sm:rounded-full sm:p-16 sm:pb-24">
-            <h3 className="font-serif text-xl font-bold">Good fit — if you...</h3>
+          <div className="rounded-[3rem] bg-blush p-10 pb-14 transition-all duration-300 hover:shadow-[0_16px_50px_-12px_rgba(238,111,160,0.5)] sm:rounded-full sm:p-16 sm:pb-24">
+            <h3 className="text-center font-serif text-xl font-bold">Good fit — if you...</h3>
             <ul className="mt-6 space-y-5">
               {goodFit.map((item) => (
                 <li key={item} className="flex items-start gap-4">
@@ -32,8 +32,8 @@ export function FitCheck() {
             </ul>
           </div>
 
-          <div className="rounded-[3rem] bg-stone p-10 pb-14 sm:rounded-full sm:p-16 sm:pb-24">
-            <h3 className="font-serif text-xl font-bold">Not a fit — if you...</h3>
+          <div className="rounded-[3rem] bg-stone p-10 pb-14 transition-all duration-300 hover:shadow-[0_16px_50px_-12px_rgba(26,23,21,0.25)] sm:rounded-full sm:p-16 sm:pb-24">
+            <h3 className="text-center font-serif text-xl font-bold">Not a fit — if you...</h3>
             <ul className="mt-6 space-y-5">
               {notFit.map((item) => (
                 <li key={item} className="flex items-start gap-4">

@@ -42,7 +42,7 @@ export function Process() {
             ))}
           </div>
 
-          <div className="rounded-[3rem] bg-blush p-10 sm:rounded-full sm:p-16">
+          <div className="rounded-[3rem] bg-blush p-10 transition-all duration-300 hover:shadow-[0_16px_50px_-12px_rgba(238,111,160,0.5)] sm:rounded-full sm:p-16">
             <AnimatePresence mode="wait">
               <motion.div
                 key={step.number}
