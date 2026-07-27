@@ -42,7 +42,7 @@ export function Hero() {
             />
           </div>
           <div
-            className="relative aspect-[4/5] w-full"
+            className="relative aspect-[4/5] w-full overflow-hidden rounded-full"
             style={{
               maskImage:
                 "radial-gradient(ellipse 80% 84% at 50% 48%, black 55%, transparent 100%)",
