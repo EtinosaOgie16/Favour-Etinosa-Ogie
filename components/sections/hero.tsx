@@ -32,7 +32,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-[22rem]">
+        <div className="relative isolate mx-auto w-full max-w-[22rem]">
           <div aria-hidden className="pointer-events-none absolute -inset-8 -z-10">
             <Image
               src="/placeholders/brush-stroke-bg.svg"
