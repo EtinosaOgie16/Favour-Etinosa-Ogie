@@ -8,7 +8,7 @@ export type Testimonial = {
 export const testimonials: Testimonial[] = [
   {
     name: "Svenja Rossig",
-    title: "Founder and CEO at Svenistudios",
+    title: "CEO at Svenistudios",
     photo: "/testimonials/svenja-rossig.svg",
     quote:
       "Favour and I started working together almost two years ago, and she's been an absolute blessing for my business. She's one of the most talented copywriters I've ever met — creating video scripts that performed amazingly well, plus blog posts that drove real traffic to our site. Her work ethic is outstanding, she always delivers on time, and she's a wonderful communicator.",
