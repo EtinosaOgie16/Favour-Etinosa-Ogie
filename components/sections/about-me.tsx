@@ -28,7 +28,7 @@ export function AboutMe() {
         <div className="mt-16 grid items-center gap-12 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-16">
           <div className="relative mx-auto aspect-square w-full max-w-sm overflow-hidden [border-radius:63%_37%_54%_46%/43%_37%_63%_57%]">
             <Image
-              src="/placeholders/hero-portrait.svg"
+              src="/photos/favour-about.jpg.jpg"
               alt="Favour Etinosa Ogie"
               fill
               className="object-cover"

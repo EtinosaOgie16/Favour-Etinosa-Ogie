@@ -51,7 +51,7 @@ export function Hero() {
             }}
           >
             <Image
-              src="/placeholders/hero-portrait.svg"
+              src="/photos/favour-hero.jpg.png"
               alt="Portrait of Favour Etinosa Ogie"
               fill
               className="object-cover"
