@@ -9,11 +9,18 @@ export function WhatIDo() {
         <div className="max-w-2xl">
           <Eyebrow>What I Do</Eyebrow>
           <h2 className="mt-6 font-serif text-3xl font-bold leading-tight sm:text-4xl">
-            Not another <em className="italic">AI content mill</em>.
+            For brands and agencies that are done with content that&rsquo;s just{" "}
+            <em className="italic">good enough</em>.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-white/60">
-            I don&rsquo;t write generic SaaS content. I study your readers first — and it
-            shows.
+            Good enough content might help you rank, or attract some traffic, but it
+            can&rsquo;t differentiate your product from the hundreds of others on the
+            market or speak directly to your ideal buyers. And it certainly
+            can&rsquo;t close.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-white/60">
+            If you&rsquo;ve been burned by content that just checks boxes, let&rsquo;s fix
+            that.
           </p>
         </div>
 
@@ -36,9 +43,10 @@ export function WhatIDo() {
           ))}
         </div>
 
-        <div className="mt-14">
+        <div className="mt-14 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
+          <p className="font-serif text-xl italic">Ready to outgrow basic content?</p>
           <PillButton href="/contact" variant="solid">
-            Work with me
+            Let&rsquo;s talk
           </PillButton>
         </div>
       </div>

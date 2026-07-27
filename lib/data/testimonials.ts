@@ -22,7 +22,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     name: "Maria Deac",
-    title: "Content Lead [job title placeholder]",
+    title: "Brand Strategist at Zitec",
     photo: "/testimonials/maria-deac.svg",
     quote:
       "Favour is an exceptional writer. She delivered high-quality articles that were well-researched, structured perfectly, and strictly followed the brief. What I appreciated most was her ability to get straight to the point without 'fluff' while maintaining an engaging tone. She met all deadlines and required almost no edits. I highly recommend her to anyone looking for a reliable, professional SEO writer. Will definitely hire again!",

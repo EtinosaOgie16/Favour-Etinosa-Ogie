@@ -20,7 +20,7 @@ export function AboutMe() {
         <div className="mt-10 text-center">
           <Eyebrow className="text-center">About Me</Eyebrow>
           <h2 className="mx-auto mt-6 max-w-2xl font-serif text-3xl font-bold leading-tight sm:text-4xl">
-            4+ years in B2B content. Still in the{" "}
+            3+ years in B2B SaaS content. Still in the{" "}
             <em className="italic">research rabbit hole</em>.
           </h2>
         </div>

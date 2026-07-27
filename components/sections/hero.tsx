@@ -3,8 +3,8 @@ import { PillButton } from "@/components/ui/pill-button";
 
 export function Hero() {
   return (
-    <section id="top" className="bg-paper pt-16 pb-20 sm:pt-24 sm:pb-28">
-      <div className="mx-auto grid max-w-6xl items-center gap-14 px-6 sm:px-8 lg:grid-cols-2 lg:gap-10">
+    <section id="top" className="bg-paper pt-12 pb-14 sm:pt-14 sm:pb-16">
+      <div className="mx-auto grid max-w-6xl items-center gap-14 px-6 sm:px-8 lg:grid-cols-2 lg:gap-20">
         <div>
           <span className="mb-8 inline-flex items-center gap-2 rounded-full border border-black/10 px-4 py-1.5 text-xs font-medium text-ink/70">
             <span className="h-2 w-2 rounded-full bg-accent" />
@@ -13,7 +13,7 @@ export function Hero() {
           <p className="eyebrow text-accent" style={{ fontSize: "0.875rem" }}>
             <sup className="mr-1 text-[0.7em]">✦</sup>Hi, I&rsquo;m Favour
           </p>
-          <h1 className="mt-6 font-serif text-4xl leading-[1.1] font-bold tracking-tight sm:text-5xl lg:text-[3.4rem]">
+          <h1 className="mt-6 font-serif text-3xl leading-[1.15] font-bold tracking-tight sm:text-4xl lg:text-[2.75rem]">
             I turn audience research and SME interviews into B2B SaaS content
             that <em className="font-serif italic">sells your product</em>.
           </h1>
@@ -32,8 +32,8 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-sm lg:max-w-none">
-          <div aria-hidden className="pointer-events-none absolute -inset-10 -z-10">
+        <div className="relative isolate mx-auto w-full max-w-[18rem]">
+          <div aria-hidden className="pointer-events-none absolute -inset-8 -z-10">
             <Image
               src="/placeholders/brush-stroke-bg.svg"
               alt=""

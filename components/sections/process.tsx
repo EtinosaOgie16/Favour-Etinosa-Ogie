@@ -3,7 +3,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { Eyebrow } from "@/components/ui/eyebrow";
-import { PillButton } from "@/components/ui/pill-button";
 import { processSteps } from "@/lib/data/process";
 
 export function Process() {
@@ -16,10 +15,11 @@ export function Process() {
         <div className="max-w-2xl">
           <Eyebrow>My Process</Eyebrow>
           <h2 className="mt-6 font-serif text-3xl font-bold leading-tight sm:text-4xl">
-            The <em className="italic">Favour Framework</em>
+            The Favour Framework: <em className="italic">Watch me Cook!</em>
           </h2>
           <p className="mt-5 text-base leading-relaxed text-ink/70">
-            How I write content that ranks on Google and gets cited by AI.
+            My recipe for writing content that speaks to readers and drives results
+            for your brand.
           </p>
         </div>
 
@@ -42,7 +42,7 @@ export function Process() {
             ))}
           </div>
 
-          <div className="rounded-[3rem] bg-blush p-10 transition-all duration-300 hover:shadow-[0_16px_50px_-12px_rgba(239,74,134,0.5)] sm:rounded-full sm:p-16">
+          <div className="aspect-square w-full self-start rounded-full bg-blush p-10 transition-all duration-300 hover:shadow-[0_16px_50px_-12px_rgba(239,74,134,0.5)] sm:max-w-[28rem] sm:p-14">
             <AnimatePresence mode="wait">
               <motion.div
                 key={step.number}
@@ -66,9 +66,12 @@ export function Process() {
         </div>
 
         <div className="mt-14">
-          <PillButton href="/contact" variant="outline">
-            Book an intro call
-          </PillButton>
+          <a
+            href="/work"
+            className="inline-flex items-center gap-2 font-serif text-lg italic text-ink underline decoration-accent decoration-2 underline-offset-4 transition-colors hover:text-accent"
+          >
+            See the process in action →
+          </a>
         </div>
       </div>
     </section>
