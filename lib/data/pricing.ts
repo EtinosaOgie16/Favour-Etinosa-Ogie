@@ -5,6 +5,7 @@ export type PricingTier = {
   description: string;
   featured: boolean;
   badge?: string;
+  features: string[];
 };
 
 export const pricingTiers: PricingTier[] = [
@@ -14,6 +15,14 @@ export const pricingTiers: PricingTier[] = [
     cadence: "one-off",
     description: "One blog post, one-time purchase.",
     featured: false,
+    features: [
+      "1 SEO and GEO-optimized blog post",
+      "Keyword + topic research",
+      "Search intent check",
+      "SME interview",
+      "One round of revisions",
+      "Delivered ready to publish",
+    ],
   },
   {
     name: "Monthly Retainer",
@@ -22,6 +31,15 @@ export const pricingTiers: PricingTier[] = [
     description: "8 blog posts per month.",
     featured: true,
     badge: "Most Popular",
+    features: [
+      "8 SEO/GEO-optimized blog posts per month",
+      "Audience research per piece",
+      "Competitor gap analysis",
+      "SME interviews",
+      "One round of revisions per piece",
+      "Monthly content calendar",
+      "Light monthly performance check-in",
+    ],
   },
   {
     name: "Content Refresh",
@@ -29,5 +47,12 @@ export const pricingTiers: PricingTier[] = [
     cadence: "per post",
     description: "Refresh/reoptimize an existing blog post.",
     featured: false,
+    features: [
+      "Full audit of the existing article vs competitors",
+      "SME interview",
+      "Updated stats, examples, and keyword targeting",
+      "Restructured for SEO/GEO and readability",
+      "One round of revisions",
+    ],
   },
 ];

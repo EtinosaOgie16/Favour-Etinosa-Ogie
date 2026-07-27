@@ -9,10 +9,10 @@ export function Pricing() {
         <div className="max-w-2xl">
           <Eyebrow>Pricing</Eyebrow>
           <h2 className="mt-6 font-serif text-3xl font-bold leading-tight sm:text-4xl">
-            Quality content at <em className="italic">half the price</em>.
+            Invest in content that <em className="italic">moves the needle</em>.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-white/60">
-            No long-term contracts. Straightforward pricing, no surprises.
+            Quality content at half the price.
           </p>
         </div>
 
@@ -20,7 +20,7 @@ export function Pricing() {
           {pricingTiers.map((tier) => (
             <div
               key={tier.name}
-              className={`relative rounded-[3rem] p-10 pb-14 transition-all duration-300 hover:shadow-[0_16px_50px_-12px_rgba(239,74,134,0.55)] sm:rounded-full sm:p-14 sm:pb-24 ${
+              className={`relative rounded-[3rem] p-10 pb-16 transition-all duration-300 hover:shadow-[0_16px_50px_-12px_rgba(239,74,134,0.55)] sm:rounded-full sm:p-16 sm:pb-28 ${
                 tier.featured
                   ? "bg-white text-ink shadow-2xl lg:-translate-y-4"
                   : "bg-white/5 text-white ring-1 ring-white/10"
@@ -47,6 +47,24 @@ export function Pricing() {
               >
                 {tier.description}
               </p>
+              <ul className="mt-6 space-y-2.5">
+                {tier.features.map((feature) => (
+                  <li key={feature} className="flex items-start gap-2.5">
+                    <span
+                      className={`mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full ${
+                        tier.featured ? "bg-accent" : "bg-accent-text"
+                      }`}
+                    />
+                    <span
+                      className={`text-sm leading-snug ${
+                        tier.featured ? "text-ink/70" : "text-white/70"
+                      }`}
+                    >
+                      {feature}
+                    </span>
+                  </li>
+                ))}
+              </ul>
               <PillButton
                 href="/contact"
                 variant={tier.featured ? "solid" : "outline-light"}
