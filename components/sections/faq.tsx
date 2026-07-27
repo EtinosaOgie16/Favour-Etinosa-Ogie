@@ -24,7 +24,7 @@ export function Faq() {
           <div className="h-fit rounded-[3rem] bg-paper p-10 text-center sm:rounded-full sm:p-14 lg:sticky lg:top-28">
             <div className="relative mx-auto h-24 w-24 overflow-hidden rounded-full">
               <Image
-                src="/placeholders/profile.svg"
+                src="/photos/favour-hero.jpg.png.png"
                 alt={siteConfig.name}
                 fill
                 className="object-cover"
