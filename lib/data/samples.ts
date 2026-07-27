@@ -2,47 +2,37 @@ export type WritingSample = {
   category: string;
   client: string;
   title: string;
+  url: string;
   keyword: string;
-  position: string;
-  aiCitations: string[];
-  result: string;
 };
 
 export const writingSamples: WritingSample[] = [
   {
-    category: "SEO Hub",
-    client: "Northbeam SaaS",
-    title: "The Complete Guide to Attribution Modeling for B2B Marketers",
-    keyword: "attribution modeling software",
-    position: "#2",
-    aiCitations: ["ChatGPT", "AI Overviews"],
-    result: "60+ KWs ranking · $36K/yr traffic value",
+    category: "Tool Roundup",
+    client: "Nightwatch",
+    title: "Best AI SEO Tools",
+    url: "https://nightwatch.io/blog/best-ai-seo-tools/",
+    keyword: "ai seo tools",
   },
   {
-    category: "Roundup",
-    client: "Ledgerly",
-    title: "9 Best AP Automation Tools for Finance Teams in 2026",
-    keyword: "ap automation software",
-    position: "#4",
-    aiCitations: ["Perplexity", "AI Overviews"],
-    result: "38 KWs ranking · $21K/yr traffic value",
+    category: "Tool Roundup",
+    client: "Nightwatch",
+    title: "Best Free SEO Tools",
+    url: "https://nightwatch.io/blog/best-free-seo-tools/",
+    keyword: "free seo tools",
   },
   {
-    category: "Comparison",
-    client: "Fieldpulse",
-    title: "Fieldpulse vs Jobber: Which Field Service Tool Actually Wins?",
-    keyword: "fieldpulse vs jobber",
-    position: "#1",
-    aiCitations: ["ChatGPT", "Perplexity"],
-    result: "24 KWs ranking · $14K/yr traffic value",
+    category: "Explainer",
+    client: "Nightwatch",
+    title: "What Are AI SEO Agents?",
+    url: "https://nightwatch.io/blog/what-are-ai-seo-agents/",
+    keyword: "ai seo agents",
   },
   {
-    category: "Case Study",
-    client: "Hearth Analytics",
-    title: "How a Mid-Market SaaS Cut Churn 18% With Better Onboarding Content",
-    keyword: "reduce saas churn onboarding",
-    position: "#3",
-    aiCitations: ["AI Overviews"],
-    result: "45 KWs ranking · $27K/yr traffic value",
+    category: "SERP Feature Guide",
+    client: "Nightwatch",
+    title: "People Also Search For",
+    url: "https://nightwatch.io/blog/people-also-search-for/",
+    keyword: "people also search for",
   },
 ];

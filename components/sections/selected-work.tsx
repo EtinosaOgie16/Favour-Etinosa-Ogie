@@ -14,49 +14,43 @@ export function SelectedWork() {
           </div>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2">
+        <div className="mt-14 grid gap-8 sm:grid-cols-2">
           {writingSamples.map((sample) => (
-            <article
+            <a
               key={sample.title}
-              className="rounded-[2.5rem] border border-black/5 bg-cream p-8 transition-all duration-300 hover:border-accent/40 hover:shadow-[0_16px_50px_-12px_rgba(239,74,134,0.5)]"
+              href={sample.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col items-center rounded-[3rem] border-2 border-blush-deep bg-cream p-10 text-center transition-all duration-300 hover:border-accent hover:shadow-[0_16px_50px_-12px_rgba(239,74,134,0.5)] sm:rounded-full sm:p-14"
             >
-              <div className="flex items-start justify-between gap-3">
-                <span className="eyebrow text-ink/50">{sample.category}</span>
-                <span className="rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
-                  {sample.client}
-                </span>
-              </div>
-
-              <h3 className="mt-4 font-serif text-lg font-bold leading-snug">
+              <span className="rounded-full bg-ink px-4 py-1.5 text-xs font-semibold text-white">
+                {sample.client}
+              </span>
+              <span className="eyebrow mt-4 text-ink/40">{sample.category}</span>
+              <h3 className="mt-3 font-serif text-lg font-bold leading-snug transition-colors group-hover:text-accent">
                 {sample.title}
               </h3>
+              <p className="mt-2 text-xs text-ink/40">Target: {sample.keyword}</p>
 
-              <div className="my-5 h-px bg-black/10" />
-
-              <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
-                <div>
-                  <p className="eyebrow text-ink/40">On Search</p>
-                  <p className="mt-1 text-sm font-semibold">
-                    {sample.position} · {sample.keyword}
-                  </p>
-                </div>
-                <div>
-                  <p className="eyebrow text-ink/40">Cited In AI</p>
-                  <div className="mt-1 flex flex-wrap gap-1.5">
-                    {sample.aiCitations.map((tool) => (
-                      <span
-                        key={tool}
-                        className="rounded-full bg-ink px-2.5 py-1 text-[0.65rem] font-semibold text-white"
-                      >
-                        {tool}
-                      </span>
-                    ))}
+              <div className="mt-7 flex items-start justify-center gap-8">
+                <div className="flex flex-col items-center gap-2">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-dashed border-ink/25 text-xs font-semibold text-ink/50">
+                    TBD
                   </div>
+                  <span className="eyebrow text-[0.6rem] text-ink/40">SERP Rank</span>
+                </div>
+                <div className="flex flex-col items-center gap-2">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-dashed border-ink/25 text-xs font-semibold text-ink/50">
+                    —
+                  </div>
+                  <span className="eyebrow text-[0.6rem] text-ink/40">AI Overviews</span>
                 </div>
               </div>
 
-              <p className="mt-5 text-sm font-medium text-accent">{sample.result}</p>
-            </article>
+              <span className="mt-7 text-sm font-semibold text-accent">
+                Read the piece ↗
+              </span>
+            </a>
           ))}
         </div>
 
