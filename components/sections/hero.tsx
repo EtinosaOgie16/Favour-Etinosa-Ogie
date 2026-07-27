@@ -14,12 +14,13 @@ export function Hero() {
             <sup className="mr-1 text-[0.7em]">✦</sup>Hi, I&rsquo;m Favour
           </p>
           <h1 className="mt-6 font-serif text-4xl leading-[1.1] font-bold tracking-tight sm:text-5xl lg:text-[3.4rem]">
-            I&rsquo;m a <em className="font-serif italic">content marketing writer</em> for
-            B2B SaaS brands
+            I turn audience research and SME interviews into B2B SaaS content
+            that <em className="font-serif italic">sells your product</em>.
           </h1>
           <p className="mt-6 max-w-md text-base leading-relaxed text-ink/70">
-            I write research-backed, MOFU/BOFU content that ranks on Google, gets cited
-            by AI, and turns readers into demos.
+            You&rsquo;ve got a ton of articles published on your blog, but not enough
+            leads in the pipeline. I bring that extra &ldquo;spice&rdquo; your content needs
+            to turn casual readers into repeat buyers.
           </p>
           <div className="mt-9 flex flex-wrap gap-4">
             <PillButton href="/contact" variant="solid">
@@ -32,7 +33,23 @@ export function Hero() {
         </div>
 
         <div className="relative mx-auto w-full max-w-sm lg:max-w-none">
-          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem]">
+          <div aria-hidden className="pointer-events-none absolute -inset-10 -z-10">
+            <Image
+              src="/placeholders/brush-stroke-bg.svg"
+              alt=""
+              fill
+              className="object-contain"
+            />
+          </div>
+          <div
+            className="relative aspect-[4/5] w-full"
+            style={{
+              maskImage:
+                "radial-gradient(ellipse 80% 84% at 50% 48%, black 55%, transparent 100%)",
+              WebkitMaskImage:
+                "radial-gradient(ellipse 80% 84% at 50% 48%, black 55%, transparent 100%)",
+            }}
+          >
             <Image
               src="/placeholders/hero-portrait.svg"
               alt="Portrait of Favour Etinosa Ogie"
