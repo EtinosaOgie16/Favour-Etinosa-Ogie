@@ -1,13 +1,13 @@
 export const aboutMePullQuote = {
   quote:
-    "Favour is the only writer I've worked with who actually sounds like she gets the product.",
-  name: "Jordan Reyes",
-  title: "Head of Content, SaaS Client",
+    "Favour is an exceptional writer... I highly recommend her to anyone looking for a reliable, professional SEO writer. Will definitely hire again!",
+  name: "Maria Deac",
+  title: "Brand Strategist at Zitec",
 };
 
 export const aboutMeBio: string[] = [
-  "Before going freelance, I wrote in-house for a B2B SaaS team, learning how content actually moves through a funnel instead of just filling a blog calendar.",
-  "Since then I've worked with founders and marketing leads across B2B SaaS — turning buyer research into content that ranks and actually gets read by the people deciding whether to buy.",
+  "Before writing B2B SaaS blog content, I wrote video sales letters for a SaaS video marketing team. There, I learned how to create content that actually sells and moves the funnel instead of just filling a blog calendar.",
+  "Since then, I've worked with B2B software companies to turn audience research into articles that rank, get read, and move buyers closer to a decision.",
   "I care less about hitting a word count and more about whether a reader three tabs deep into comparing tools finds what they need in my piece.",
-  "Outside of work, I'm usually reading, testing out a new coffee shop, or down a Reddit thread that'll probably turn into next week's article.",
+  "Outside of work, I'm usually writing fiction, crocheting my new favorite outfit, or escaping reality in a good book and a tasty cup of coffee.",
 ];
