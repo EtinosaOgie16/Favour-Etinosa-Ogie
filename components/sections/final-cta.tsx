@@ -9,15 +9,16 @@ export function FinalCta() {
         <div className="rounded-[2.5rem] bg-cream px-8 py-16 text-center sm:px-16 sm:py-20">
           <Eyebrow className="text-center">Let&rsquo;s Work Together</Eyebrow>
           <h2 className="mx-auto mt-6 max-w-xl font-serif text-3xl font-bold leading-tight sm:text-4xl">
-            Content that earns its place in your <em className="italic">pipeline</em>.
+            B2B SaaS content that works for{" "}
+            <em className="italic">your bottom line</em>.
           </h2>
           <p className="mx-auto mt-5 max-w-md text-base leading-relaxed text-ink/70">
-            B2B SaaS content built to rank on Google, get cited by AI, and turn traffic
-            into demos.
+            Scrap the good enough, the filler and the AI slop. Your product deserves a
+            unique voice and a writer ready to go the extra mile.
           </p>
           <div className="mt-9 flex justify-center">
             <PillButton href="/contact" variant="solid">
-              Book an intro call
+              Work with me
             </PillButton>
           </div>
           <a
