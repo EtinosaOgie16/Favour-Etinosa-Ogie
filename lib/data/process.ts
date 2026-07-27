@@ -7,7 +7,7 @@ export type ProcessStep = {
 export const processSteps: ProcessStep[] = [
   {
     number: "01",
-    title: "Understand their taste buds (Audience Research)",
+    title: "Understand their taste buds",
     description:
       "Conduct thorough customer research by reviewing conversations on Reddit/Quora threads, G2 reviews, and LinkedIn.",
   },
