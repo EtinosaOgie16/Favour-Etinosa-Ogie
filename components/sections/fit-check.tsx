@@ -7,9 +7,9 @@ export function FitCheck() {
     <section className="bg-paper py-24">
       <div className="mx-auto max-w-6xl px-6 sm:px-8">
         <div className="max-w-2xl">
-          <Eyebrow>Is This a Fit</Eyebrow>
+          <Eyebrow>Is This a Fit?</Eyebrow>
           <h2 className="mt-6 font-serif text-3xl font-bold leading-tight sm:text-4xl">
-            Built for <em className="italic">some</em> teams. Not for everyone.
+            Before you <em className="italic">book that call</em>
           </h2>
           <p className="mt-5 text-base leading-relaxed text-ink/70">
             I work best with a specific type of client. Here&rsquo;s how to tell if we&rsquo;re
