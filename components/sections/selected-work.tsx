@@ -11,6 +11,10 @@ export function SelectedWork() {
             <h2 className="mt-6 font-serif text-3xl font-bold leading-tight sm:text-4xl">
               Content that <em className="italic">ranks and gets cited</em>.
             </h2>
+            <p className="mt-5 text-base leading-relaxed text-ink/70">
+              I write content that shows up on Google, gets pulled into AI answers, and
+              actually converts.
+            </p>
           </div>
         </div>
 

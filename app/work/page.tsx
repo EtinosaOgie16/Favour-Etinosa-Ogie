@@ -17,7 +17,7 @@ export default function WorkPage() {
             Content that <em className="italic">ranks and gets cited</em>.
           </>
         }
-        subtitle="Live pieces published for Nightwatch — SERP rank and AI Overview citation status added as they're tracked."
+        subtitle="I write content that shows up on Google, gets pulled into AI answers, and actually converts."
       />
 
       <section className="bg-paper py-16">
