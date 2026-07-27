@@ -9,13 +9,13 @@ export function AudienceCallout() {
         <div className="max-w-2xl">
           <Eyebrow>Sound Familiar?</Eyebrow>
           <h2 className="mt-6 font-serif text-3xl font-bold leading-tight sm:text-4xl">
-            If you&rsquo;re a SaaS founder, content marketer, or agency that needs
-            writers who understand <em className="italic">search, AI, and buyers</em>
-            &hellip;
+            You&rsquo;re a SaaS company or agency that&rsquo;s been searching for someone
+            who writes well and <em className="italic">sells even better</em>.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-ink/70">
-            You&rsquo;ve probably worked with writers who turn in generic, keyword-stuffed
-            drafts that need a full rewrite before they&rsquo;re usable. That&rsquo;s not this.
+            You&rsquo;ve worked with writers who chase word counts or just clean up
+            AI-generated drafts. The content has no voice, no argument, and your
+            unique selling point is lost in filler. That&rsquo;s not this.
           </p>
         </div>
 
@@ -35,7 +35,7 @@ export function AudienceCallout() {
 
         <div className="mt-14 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
           <p className="font-serif text-xl italic">
-            If this sounds like you, here&rsquo;s how I can help.
+            If that sounds like you, here&rsquo;s how I can help.
           </p>
           <PillButton href="/contact" variant="solid">
             Let&rsquo;s work together

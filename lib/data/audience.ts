@@ -5,23 +5,23 @@ export type AudienceCard = {
 
 export const audienceCards: AudienceCard[] = [
   {
-    title: "SaaS Founder/CEO",
+    title: "SaaS Founder",
     description:
-      "You know your product cold. You need a writer who can actually learn it — and turn it into content that converts.",
+      "You've got an exciting product that needs selling, but you need a writer who's ready to learn it, and properly differentiate your offering from everything else on the market.",
   },
   {
-    title: "Content Marketer / Head of Content",
+    title: "Head of Content",
     description:
-      "You have the strategy. You need a writer who can execute it at a high level without constant back-and-forth.",
+      "The strategy is ready and content calendar approved. All you're missing is a reliable writer that will turn briefs into finished pieces without hand holding or constant revisions.",
   },
   {
-    title: "In-House Marketing Team",
+    title: "Content Marketing Agency",
     description:
-      "Your team's stretched thin. You need someone to own content/SEO output so they can focus elsewhere.",
+      "To hit your MRR targets, you've booked a couple more clients but don't have enough writers on your roster to handle them all. You need a writer who can learn fast, research deep, and can match your existing voice.",
   },
   {
-    title: "Content / Marketing Agency",
+    title: "Early Stage Startup",
     description:
-      "You need a reliable B2B SaaS writer to slot into client projects — deep niche knowledge, minimal onboarding.",
+      "Your product is fresh out the box, and you need a partner that can come up with strategy, build your blog's core writing guidelines, and give your new product the unique voice it needs to stand out.",
   },
 ];
