@@ -2,7 +2,7 @@ export const aboutMePullQuote = {
   quote:
     "Favour is an exceptional writer... I highly recommend her to anyone looking for a reliable, professional SEO writer. Will definitely hire again!",
   name: "Maria Deac",
-  title: "Brand Strategist at Zitec",
+  title: "Content Lead at Zitec",
 };
 
 export const aboutMeBio: string[] = [
