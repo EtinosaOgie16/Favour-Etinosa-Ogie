@@ -33,21 +33,20 @@ export function Hero() {
         </div>
 
         <div className="relative mx-auto w-full max-w-[18rem]">
-          <div
-            className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem]"
-            style={{
-              maskImage:
-                "radial-gradient(ellipse 80% 84% at 50% 48%, black 55%, transparent 100%)",
-              WebkitMaskImage:
-                "radial-gradient(ellipse 80% 84% at 50% 48%, black 55%, transparent 100%)",
-            }}
-          >
+          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem]">
             <Image
               src="/photos/favour-hero.jpg.png.png"
               alt="Portrait of Favour Etinosa Ogie"
               fill
               className="object-cover"
               priority
+            />
+            <Image
+              src="/placeholders/hero-bubbles.svg"
+              alt=""
+              fill
+              aria-hidden
+              className="pointer-events-none object-cover"
             />
           </div>
         </div>
