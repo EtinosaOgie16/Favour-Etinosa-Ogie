@@ -125,7 +125,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 border-t border-white/10 pt-8 text-center text-xs text-white/40">
-          <p>© {siteConfig.shortName} 2026. Independent writer, no agency in between.</p>
+          <p>© {siteConfig.name} 2026</p>
         </div>
       </div>
     </footer>
