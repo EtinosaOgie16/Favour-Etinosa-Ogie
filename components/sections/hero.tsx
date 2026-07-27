@@ -3,7 +3,7 @@ import { PillButton } from "@/components/ui/pill-button";
 
 export function Hero() {
   return (
-    <section id="top" className="bg-paper pt-16 pb-20 sm:pt-24 sm:pb-28">
+    <section id="top" className="bg-paper pt-12 pb-14 sm:pt-14 sm:pb-16">
       <div className="mx-auto grid max-w-6xl items-center gap-14 px-6 sm:px-8 lg:grid-cols-2 lg:gap-10">
         <div>
           <span className="mb-8 inline-flex items-center gap-2 rounded-full border border-black/10 px-4 py-1.5 text-xs font-medium text-ink/70">
@@ -32,8 +32,8 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-sm lg:max-w-none">
-          <div aria-hidden className="pointer-events-none absolute -inset-10 -z-10">
+        <div className="relative mx-auto w-full max-w-[22rem]">
+          <div aria-hidden className="pointer-events-none absolute -inset-8 -z-10">
             <Image
               src="/placeholders/brush-stroke-bg.svg"
               alt=""
