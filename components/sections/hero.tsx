@@ -51,7 +51,7 @@ export function Hero() {
             }}
           >
             <Image
-              src="/photos/favour-hero.jpg.png"
+              src="/photos/favour-hero.jpg.png.png"
               alt="Portrait of Favour Etinosa Ogie"
               fill
               className="object-cover"
