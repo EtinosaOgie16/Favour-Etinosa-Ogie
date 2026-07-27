@@ -4,7 +4,7 @@ export const siteConfig = {
   initials: "FO",
   role: "B2B SaaS Content Writer",
   tagline:
-    "Freelance B2B SaaS content writer. Bottom-funnel pieces built to rank, convert, and get cited in AI answers.",
+    "Favour Etinosa Ogie. B2B SaaS content writer for brands that don't do generic.",
   email: "ogieriakhifavour16@gmail.com",
   bookCallUrl: "#book-a-call",
   social: {
