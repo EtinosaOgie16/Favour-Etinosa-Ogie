@@ -76,10 +76,10 @@ export function Process() {
                 </div>
 
                 <div
-                  className={`rounded-[3rem] p-10 transition-all duration-300 sm:rounded-full sm:p-14 ${
+                  className={`rounded-[3rem] border-2 p-10 transition-all duration-300 sm:rounded-full sm:p-14 ${
                     active === i
-                      ? "bg-blush shadow-[0_16px_50px_-12px_rgba(239,74,134,0.35)]"
-                      : "bg-cream/60"
+                      ? "border-accent bg-blush shadow-[0_16px_50px_-12px_rgba(239,74,134,0.35)]"
+                      : "border-accent/30 bg-cream/60"
                   }`}
                 >
                   <p
