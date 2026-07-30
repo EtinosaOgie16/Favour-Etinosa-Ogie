@@ -43,7 +43,7 @@ export function Testimonials() {
 
         <div className="mt-12 grid gap-12 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] lg:items-center lg:gap-16">
           <div>
-            <span className="font-serif text-6xl leading-none text-accent/25">
+            <span className="font-serif text-8xl leading-none text-accent/60">
               &ldquo;
             </span>
             <blockquote className="mt-2 font-serif text-xl leading-relaxed text-ink sm:text-2xl">
