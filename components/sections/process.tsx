@@ -50,11 +50,11 @@ export function Process() {
                   rowRefs.current[i] = el;
                 }}
                 data-index={i}
-                className="grid gap-5 sm:grid-cols-[minmax(0,13rem)_minmax(0,1fr)] sm:items-start sm:gap-14"
+                className="grid gap-5 sm:grid-cols-[minmax(0,13rem)_minmax(0,1fr)] sm:items-center sm:gap-14"
               >
                 <div className="relative">
                   <span
-                    className={`absolute -left-8 top-1.5 h-3 w-3 -translate-x-1/2 rounded-full ring-4 ring-paper transition-colors duration-300 sm:-left-10 ${
+                    className={`absolute -left-8 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full ring-4 ring-paper transition-colors duration-300 sm:-left-10 ${
                       active === i ? "bg-accent" : "bg-ink/20"
                     }`}
                     aria-hidden
@@ -76,7 +76,7 @@ export function Process() {
                 </div>
 
                 <div
-                  className={`rounded-[2rem] p-8 transition-all duration-300 ${
+                  className={`rounded-[3rem] p-10 transition-all duration-300 sm:rounded-full sm:p-14 ${
                     active === i
                       ? "bg-blush shadow-[0_16px_50px_-12px_rgba(239,74,134,0.35)]"
                       : "bg-cream/60"

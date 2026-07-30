@@ -60,8 +60,8 @@ export function Testimonials() {
             </div>
           </div>
 
-          <div className="mx-auto w-full max-w-sm">
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem]">
+          <div className="mx-auto flex w-full max-w-sm flex-col items-center">
+            <div className="relative h-56 w-56 shrink-0 overflow-hidden rounded-full sm:h-64 sm:w-64">
               <Image
                 key={t.photo}
                 src={t.photo}
@@ -69,12 +69,12 @@ export function Testimonials() {
                 fill
                 className="object-cover"
               />
-              <span className="absolute bottom-4 left-4 rounded-full bg-ink px-4 py-1.5 text-xs font-semibold text-white">
-                {t.company}
-              </span>
             </div>
+            <span className="mt-6 rounded-full bg-ink px-4 py-1.5 text-xs font-semibold text-white">
+              {t.company}
+            </span>
 
-            <div className="mt-6 flex items-center justify-between">
+            <div className="mt-8 flex w-full items-center justify-between">
               <div className="flex items-center gap-3">
                 <button
                   type="button"
