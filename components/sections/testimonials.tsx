@@ -60,8 +60,8 @@ export function Testimonials() {
             </div>
           </div>
 
-          <div className="mx-auto flex w-full max-w-sm flex-col items-center">
-            <div className="relative h-56 w-56 shrink-0 overflow-hidden rounded-full sm:h-64 sm:w-64">
+          <div className="mx-auto flex w-full max-w-md flex-col items-center">
+            <div className="relative h-72 w-72 shrink-0 overflow-hidden rounded-full sm:h-96 sm:w-96">
               <Image
                 key={t.photo}
                 src={t.photo}
