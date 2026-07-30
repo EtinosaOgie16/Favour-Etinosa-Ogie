@@ -1,13 +1,29 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { processSteps } from "@/lib/data/process";
 
 export function Process() {
   const [active, setActive] = useState(0);
-  const step = processSteps[active];
+  const rowRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = Number(entry.target.getAttribute("data-index"));
+            setActive(index);
+          }
+        });
+      },
+      { rootMargin: "-45% 0px -45% 0px", threshold: 0 },
+    );
+
+    rowRefs.current.forEach((el) => el && observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <section className="bg-paper py-24">
@@ -23,45 +39,59 @@ export function Process() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)] lg:gap-16">
-          <div className="flex flex-col divide-y divide-black/10 border-y border-black/10">
-            {processSteps.map((s, i) => (
-              <button
-                key={s.number}
-                type="button"
-                onClick={() => setActive(i)}
-                className={`flex items-center gap-5 py-6 text-left transition-colors ${
-                  active === i ? "text-accent" : "text-ink/50 hover:text-ink"
-                }`}
-              >
-                <span className="font-serif text-2xl font-bold">{s.number}</span>
-                <span className="font-serif text-lg font-semibold sm:text-xl">
-                  {s.title}
-                </span>
-              </button>
-            ))}
-          </div>
+        <div className="relative mt-16 pl-8 sm:pl-10">
+          <div className="absolute top-2 bottom-2 left-0 w-px bg-black/10" aria-hidden />
 
-          <div className="aspect-square w-full self-start rounded-full bg-blush p-10 transition-all duration-300 hover:shadow-[0_16px_50px_-12px_rgba(239,74,134,0.5)] sm:max-w-[28rem] sm:p-14">
-            <AnimatePresence mode="wait">
-              <motion.div
+          <div className="flex flex-col gap-14">
+            {processSteps.map((step, i) => (
+              <div
                 key={step.number}
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -12 }}
-                transition={{ duration: 0.25 }}
+                ref={(el) => {
+                  rowRefs.current[i] = el;
+                }}
+                data-index={i}
+                className="grid gap-5 sm:grid-cols-[minmax(0,13rem)_minmax(0,1fr)] sm:items-start sm:gap-14"
               >
-                <span className="font-serif text-5xl font-bold text-accent">
-                  {step.number}
-                </span>
-                <h3 className="mt-5 font-serif text-2xl font-bold leading-snug">
-                  {step.title}
-                </h3>
-                <p className="mt-4 text-base leading-relaxed text-ink/70">
-                  {step.description}
-                </p>
-              </motion.div>
-            </AnimatePresence>
+                <div className="relative">
+                  <span
+                    className={`absolute -left-8 top-1.5 h-3 w-3 -translate-x-1/2 rounded-full ring-4 ring-paper transition-colors duration-300 sm:-left-10 ${
+                      active === i ? "bg-accent" : "bg-ink/20"
+                    }`}
+                    aria-hidden
+                  />
+                  <p
+                    className={`eyebrow transition-colors duration-300 ${
+                      active === i ? "text-accent" : "text-ink/30"
+                    }`}
+                  >
+                    {step.number}
+                  </p>
+                  <h3
+                    className={`mt-2 font-serif text-xl font-bold leading-snug transition-colors duration-300 sm:text-2xl ${
+                      active === i ? "text-ink" : "text-ink/30"
+                    }`}
+                  >
+                    {step.title}
+                  </h3>
+                </div>
+
+                <div
+                  className={`rounded-[2rem] p-8 transition-all duration-300 ${
+                    active === i
+                      ? "bg-blush shadow-[0_16px_50px_-12px_rgba(239,74,134,0.35)]"
+                      : "bg-cream/60"
+                  }`}
+                >
+                  <p
+                    className={`text-base leading-relaxed transition-colors duration-300 ${
+                      active === i ? "text-ink/80" : "text-ink/35"
+                    }`}
+                  >
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
