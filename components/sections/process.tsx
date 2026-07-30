@@ -64,7 +64,7 @@ export function Process() {
             </div>
           </div>
 
-          <div className="aspect-square w-full self-start rounded-full border-2 border-accent bg-blush p-10 transition-all duration-300 hover:shadow-[0_16px_50px_-12px_rgba(239,74,134,0.5)] sm:max-w-[28rem] sm:p-14">
+          <div className="aspect-square w-full self-start rounded-full bg-blush p-10 transition-all duration-300 hover:shadow-[0_16px_50px_-12px_rgba(239,74,134,0.5)] sm:max-w-[28rem] sm:p-14">
             <AnimatePresence mode="wait">
               <motion.div
                 key={step.number}
