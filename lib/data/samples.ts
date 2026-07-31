@@ -18,7 +18,7 @@ export const writingSamples: WritingSample[] = [
     keyword: "keyword rank trackers",
     serpRank: "#2",
     citedInAI: true,
-    note: "Still ranking a year after publishing, with zero refreshes.",
+    note: "Still ranking a year after publishing, with limited refreshes.",
   },
   {
     category: "Explainer",
@@ -28,7 +28,7 @@ export const writingSamples: WritingSample[] = [
     keyword: "ai seo agents",
     serpRank: "#2",
     citedInAI: true,
-    note: "Still ranking a year after publishing, with zero refreshes.",
+    note: "Still ranking a year after publishing, with limited refreshes.",
   },
   {
     category: "SERP Feature Guide",
@@ -38,7 +38,7 @@ export const writingSamples: WritingSample[] = [
     keyword: "people also search for",
     serpRank: "#3",
     citedInAI: true,
-    note: "Still ranking a year after publishing, with zero refreshes.",
+    note: "Still ranking a year after publishing, with limited refreshes.",
   },
   {
     category: "Tool Roundup",
@@ -47,6 +47,6 @@ export const writingSamples: WritingSample[] = [
     url: "https://nightwatch.io/blog/best-ai-seo-tools/",
     keyword: "ai seo tools",
     serpRank: "#7",
-    note: "Highly competitive term — even Semrush ranks on page 2 for it. Still holding this spot a year after publishing, with zero refreshes.",
+    note: "Highly competitive term — even Semrush ranks on page 2 for it. Still holding this spot a year after publishing, with limited refreshes.",
   },
 ];
