@@ -13,18 +13,12 @@ export const writingSamples: WritingSample[] = [
   {
     category: "Tool Roundup",
     client: "Nightwatch",
-    title: "Best AI SEO Tools",
-    url: "https://nightwatch.io/blog/best-ai-seo-tools/",
-    keyword: "ai seo tools",
-    serpRank: "#7",
-    note: "Highly competitive term — even Semrush ranks on page 2 for it.",
-  },
-  {
-    category: "Tool Roundup",
-    client: "Nightwatch",
-    title: "Best Free SEO Tools",
-    url: "https://nightwatch.io/blog/best-free-seo-tools/",
-    keyword: "free seo tools",
+    title: "Best Rank Trackers for SEO",
+    url: "https://nightwatch.io/blog/10-best-keyword-rank-trackers/",
+    keyword: "keyword rank trackers",
+    serpRank: "#2",
+    citedInAI: true,
+    note: "Still ranking a year after publishing, with zero refreshes.",
   },
   {
     category: "Explainer",
@@ -34,6 +28,7 @@ export const writingSamples: WritingSample[] = [
     keyword: "ai seo agents",
     serpRank: "#2",
     citedInAI: true,
+    note: "Still ranking a year after publishing, with zero refreshes.",
   },
   {
     category: "SERP Feature Guide",
@@ -43,5 +38,15 @@ export const writingSamples: WritingSample[] = [
     keyword: "people also search for",
     serpRank: "#3",
     citedInAI: true,
+    note: "Still ranking a year after publishing, with zero refreshes.",
+  },
+  {
+    category: "Tool Roundup",
+    client: "Nightwatch",
+    title: "Best AI SEO Tools",
+    url: "https://nightwatch.io/blog/best-ai-seo-tools/",
+    keyword: "ai seo tools",
+    serpRank: "#7",
+    note: "Highly competitive term — even Semrush ranks on page 2 for it. Still holding this spot a year after publishing, with zero refreshes.",
   },
 ];
