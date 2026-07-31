@@ -6,6 +6,7 @@ export type WritingSample = {
   keyword: string;
   serpRank?: string;
   citedInAI?: boolean;
+  note?: string;
 };
 
 export const writingSamples: WritingSample[] = [
@@ -15,6 +16,8 @@ export const writingSamples: WritingSample[] = [
     title: "Best AI SEO Tools",
     url: "https://nightwatch.io/blog/best-ai-seo-tools/",
     keyword: "ai seo tools",
+    serpRank: "#7",
+    note: "Highly competitive term — even Semrush ranks on page 2 for it.",
   },
   {
     category: "Tool Roundup",

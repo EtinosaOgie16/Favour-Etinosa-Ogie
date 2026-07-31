@@ -67,6 +67,12 @@ export default function WorkPage() {
                   </div>
                 </div>
 
+                {sample.note && (
+                  <p className="mt-5 max-w-xs text-xs italic leading-relaxed text-ink/40">
+                    {sample.note}
+                  </p>
+                )}
+
                 <span className="mt-7 text-sm font-semibold text-accent">
                   Read the piece ↗
                 </span>
