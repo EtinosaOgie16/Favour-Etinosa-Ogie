@@ -4,6 +4,8 @@ export type WritingSample = {
   title: string;
   url: string;
   keyword: string;
+  serpRank?: string;
+  citedInAI?: boolean;
 };
 
 export const writingSamples: WritingSample[] = [
@@ -27,6 +29,8 @@ export const writingSamples: WritingSample[] = [
     title: "What Are AI SEO Agents?",
     url: "https://nightwatch.io/blog/what-are-ai-seo-agents/",
     keyword: "ai seo agents",
+    serpRank: "#2",
+    citedInAI: true,
   },
   {
     category: "SERP Feature Guide",
@@ -34,5 +38,7 @@ export const writingSamples: WritingSample[] = [
     title: "People Also Search For",
     url: "https://nightwatch.io/blog/people-also-search-for/",
     keyword: "people also search for",
+    serpRank: "#3",
+    citedInAI: true,
   },
 ];

@@ -38,14 +38,26 @@ export function SelectedWork() {
 
               <div className="mt-7 flex items-start justify-center gap-8">
                 <div className="flex flex-col items-center gap-2">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-dashed border-ink/25 text-xs font-semibold text-ink/50">
-                    TBD
+                  <div
+                    className={
+                      sample.serpRank
+                        ? "flex h-14 w-14 items-center justify-center rounded-full border-2 border-accent bg-accent/10 text-sm font-bold text-accent"
+                        : "flex h-14 w-14 items-center justify-center rounded-full border-2 border-dashed border-ink/25 text-xs font-semibold text-ink/50"
+                    }
+                  >
+                    {sample.serpRank ?? "TBD"}
                   </div>
                   <span className="eyebrow text-[0.6rem] text-ink/40">SERP Rank</span>
                 </div>
                 <div className="flex flex-col items-center gap-2">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-dashed border-ink/25 text-xs font-semibold text-ink/50">
-                    —
+                  <div
+                    className={
+                      sample.citedInAI
+                        ? "flex h-14 w-14 items-center justify-center rounded-full border-2 border-accent bg-accent/10 text-xs font-bold text-accent"
+                        : "flex h-14 w-14 items-center justify-center rounded-full border-2 border-dashed border-ink/25 text-xs font-semibold text-ink/50"
+                    }
+                  >
+                    {sample.citedInAI ? "Yes" : "—"}
                   </div>
                   <span className="eyebrow text-[0.6rem] text-ink/40">AI Overviews</span>
                 </div>
