@@ -2,7 +2,6 @@ import { Hero } from "@/components/sections/hero";
 import { Marquee } from "@/components/sections/marquee";
 import { AudienceCallout } from "@/components/sections/audience-callout";
 import { WhatIDo } from "@/components/sections/what-i-do";
-import { SelectedWork } from "@/components/sections/selected-work";
 import { Process } from "@/components/sections/process";
 import { AboutMe } from "@/components/sections/about-me";
 import { Testimonials } from "@/components/sections/testimonials";
@@ -19,7 +18,6 @@ export default function Home() {
       <Marquee />
       <AudienceCallout />
       <WhatIDo />
-      <SelectedWork />
       <Process />
       <AboutMe />
       <Testimonials />

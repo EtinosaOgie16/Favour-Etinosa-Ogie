@@ -86,15 +86,6 @@ export function Process() {
             </AnimatePresence>
           </div>
         </div>
-
-        <div className="mt-14">
-          <a
-            href="/work"
-            className="inline-flex items-center gap-2 font-serif text-lg italic text-ink underline decoration-accent decoration-2 underline-offset-4 transition-colors hover:text-accent"
-          >
-            See the process in action →
-          </a>
-        </div>
       </div>
     </section>
   );

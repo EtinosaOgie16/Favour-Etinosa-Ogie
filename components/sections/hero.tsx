@@ -26,9 +26,6 @@ export function Hero() {
             <PillButton href="/contact" variant="solid">
               Work with me
             </PillButton>
-            <PillButton href="/work" variant="outline">
-              View my samples
-            </PillButton>
           </div>
         </div>
 

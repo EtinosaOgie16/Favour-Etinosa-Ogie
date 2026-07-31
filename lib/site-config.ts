@@ -14,7 +14,6 @@ export const siteConfig = {
   },
   nav: [
     { label: "Home", href: "/" },
-    { label: "Work", href: "/work" },
     { label: "Services", href: "/services" },
     { label: "Blog", href: "/blog" },
     { label: "About", href: "/about" },
@@ -23,7 +22,6 @@ export const siteConfig = {
   footerNav: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Work", href: "/work" },
     { label: "Services", href: "/services" },
     { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
